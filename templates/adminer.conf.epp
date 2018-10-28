@@ -1,0 +1,10 @@
+Alias /<%= $apache_alias %> "<%= $install_dir %>"
+<Directory "<%= $install_dir %>">
+    AllowOverride All
+    Options FollowSymlinks
+    Order deny,allow
+    Deny from all
+<% $allow_list.each - %>
+<% |$ip| { %>   Allow from <%= $ip %>
+<% } -%>
+</Directory>
