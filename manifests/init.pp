@@ -3,7 +3,7 @@ class adminer (
     String              $install_dir        = $::adminer::params::install_dir,
     String              $apache_conf_dir    = $::adminer::params::apache_config_dir,
     Array[ String ]     $allow_list         = [ '127.0.0.1' ],
-    ) {
+    ) inherits ::adminer::params {
     
     include wget
     
