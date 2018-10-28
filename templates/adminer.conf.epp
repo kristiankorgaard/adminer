@@ -4,7 +4,7 @@ Alias /<%= $apache_alias %> "<%= $install_dir %>"
     Options FollowSymlinks
     Order deny,allow
     Deny from all
-<% $allow_list.each - %>
+<% $allow_list.each -%>
 <% |$ip| { %>   Allow from <%= $ip %>
 <% } -%>
 </Directory>
