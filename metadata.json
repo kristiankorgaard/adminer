@@ -1,0 +1,32 @@
+{
+  "author": "Kristian Korgaard",
+  "license": "",
+  "name": "adminer",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "project_page": "",
+  "requirements": [],
+  "source": "",
+  "summary": "",
+  "tags": [],
+  "version": "1.0.0",
+  "description": "Puppet deployment of adminer.org",
+  "dependencies": [
+  	{"name":"puppetlabs/apache","version_requirement":">= 3.0.0"},
+    {"name":"puppetlabs/concat","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs/stdlib","version_requirement":">= 3.2.0"},
+    {"name":"puppetlabs/wget","version_requirement":">= 2.0.0"}
+  ]
+}
